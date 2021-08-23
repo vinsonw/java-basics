@@ -36,6 +36,7 @@ public class Main {
         System.out.println(point2);
 
         // test git from idea.
+        // use git config --global --replace-all user.name to reset account info
 
     }
 }
