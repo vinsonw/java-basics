@@ -35,5 +35,7 @@ public class Main {
         point1.x = 2; // use point1 as the handler to update the same object, DIFFER FROM PYTHON.
         System.out.println(point2);
 
+        // test git from idea.
+
     }
 }
