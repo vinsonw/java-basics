@@ -12,8 +12,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-    // variables
+        // write your code here
+        // variables
 //        int myAge = 30;
 //        int herAge = myAge;
 //        System.out.println(herAge);
@@ -167,27 +167,187 @@ public class Main {
 //        System.out.println("Your name is: " + name);
 
         // Exercise: Mortgage Calculator
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Principle: ");
-        double principle = scanner.nextDouble();
-        System.out.print("Annual Interest Rate: ");
-        float annualInterestRate = scanner.nextFloat(); // input as percentage number
-        System.out.print("Periods(Years): ");
-        byte periodYear = scanner.nextByte();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Principle: ");
+//        double principle = scanner.nextDouble();
+//        System.out.print("Annual Interest Rate: ");
+//        float annualInterestRate = scanner.nextFloat(); // input as percentage number
+//        System.out.print("Periods(Years): ");
+//        byte periodYear = scanner.nextByte();
+//
+//        float monthlyInterestRate = annualInterestRate / 100 / 12;
+//        int periodMonths = periodYear * 12;
+//        String Mortgage = NumberFormat.getCurrencyInstance().format(
+//                principle *
+//                monthlyInterestRate *
+//                Math.pow(1+monthlyInterestRate, periodMonths)
+//                /
+//                (Math.pow(1+monthlyInterestRate, periodMonths) - 1)
+//        );
+//        System.out.println("Your mortgage: " + Mortgage);
+//
+//        int x = 1;
+//        int y = 2;
+//        System.out.println(x != y);
+//
+//      Logical Operators
+//
+//        int temperature = 12;
+//        boolean isWarm =  temperature > 20 &&
+//                temperature < 30;
+//        System.out.println(isWarm);
+//        boolean hasHighIncome = false;
+//        boolean hasGoodCredit = true;
+//        boolean hasCriminalRecord = true;
+//        boolean isEligible = (hasCriminalRecord || hasHighIncome) &&
+//                !hasCriminalRecord;
+//        int temp = 32;
+//        if (temp > 30) {
+//            System.out.println("The tem is above 30!");
+//            System.out.println("drink water");
+//        } else if (temp > 20 && temp <= 30) {
+//            System.out.println("Beautiful Day.");
+//        } else {
+//            System.out.println("Cold day.");
+//        }
+//        int income = 120_000;
+        // version 1
+//        boolean hasHighIncome = false;
+//        if (income > 1000_1000){
+//            hasHighIncome = true;
+//        }
+//        System.out.println(hasHighIncome);
+        // version 2
+//       boolean hasHighIncome = income > 100_00;
 
-        float monthlyInterestRate = annualInterestRate / 100 / 12;
-        int periodMonths = periodYear * 12;
-        String Mortgage = NumberFormat.getCurrencyInstance().format(
-                principle *
-                monthlyInterestRate *
-                Math.pow(1+monthlyInterestRate, periodMonths)
-                /
-                (Math.pow(1+monthlyInterestRate, periodMonths) - 1)
-        );
-        System.out.println("Your mortgage: " + Mortgage);
+        // Ternary Operator
+//        String className  = income > 100_000 ? "First" : "Economy";
 
 
+        // Switch Statement
+//       String role = "admin" ;
+//       switch (role)
+//       {
+//           case "admin":
+//               System.out.println("youre admino");
+//               break;
+//           case "user":
+//               System.out.println("something");
+//               break;
+//           case "sds":
+//               System.out.println("Hi");
+//               break;
+//           default:
+//               System.out.println("you're guest");
+//       }
+
+        // FizzBuzz Exercise
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Give me a number: ");
+//        int number = scanner.nextInt();
+//        String result =
+//                number % 5 == 0 ?
+//                    number % 3 == 0 ?
+//                        "FizzBuzz": "Fizz"
+//                :
+//                number % 3 == 0 ?
+//                        "Buzz" : String.valueOf(number);
+//        System.out.println(result);
+//
+        // For-Loops
+//        for (int i = 0; i < 5; i++)
+//            System.out.println("hello world" + i);
+        // While-Loops
+//        int i = 5;
+//        while (i > 0) {
+//            System.out.println("hello world " + i);
+//            i--;
+//        String input = "";
+//        Scanner scanner = new Scanner(System.in);
+//        // note ==/!= compares the address not the value of the variable
+//        // that's why we use .equals here
+//        while (!input.equals("quit"))
+//            System.out.println("input");
+//            input = scanner.next();
+//            System.out.println(input);
+//        }
+
+
+
+        // Do-While Loops
+
+//        String input = "";
+//        Scanner scanner = new Scanner(System.in);
+//        do {
+//            System.out.println("input");
+//            input = scanner.next();
+//            System.out.println(input);
+//        } while (!input.equals("quit"));
+
+        // Continue and Break
+        // omitted.
+
+
+        // For-Each Loops
+//        String[] fruits = {
+//                "apple",
+//                "mango",
+//                "orange"
+//        };
+//        // for each loop, more convenient
+//        for (String fruit: fruits)
+//            System.out.println(fruit);
+//        // traditional way, more flex
+//        for (int i = fruits.length; i>0; i--)
+//            System.out.println(fruits[i-1]);
+        //
+
+//         Exercise: Mortgage Calculator
+//        Scanner scanner = new Scanner(System.in);
+//        double principle;
+//        float annualInterestRate;
+//        int periodYear;
+//
+//        while (true) {
+//            System.out.print("Principle(1k-1m): ");
+//            principle = scanner.nextDouble();
+//            if (principle >= 1000 && principle <= 1000000)
+//                break;
+//            System.out.println("Please enter a value between 1k-1m");
+//        }
+//
+//        while (true) {
+//            System.out.print("Annual Interest Rate: ");
+//            annualInterestRate = scanner.nextFloat(); // input as percentage number
+//            if (annualInterestRate >= 1 && annualInterestRate <= 30)
+//                break;
+//            System.out.println("Please enter a rate that is greater than 1 and lesser than 30.");
+//        }
+//
+//        while (true) {
+//            System.out.print("Periods(Years): ");
+//            periodYear = scanner.nextInt();
+//            if (periodYear > 0 && periodYear <= 30)
+//                break;
+//            System.out.println("Please enter a period that is greater than  and lesser than 30.");
+//        }
+//
+//        final int MONTHS = 12;
+//        final int PERCENT = 100;
+//
+//
+//        float monthlyInterestRate = annualInterestRate / PERCENT / MONTHS;
+//        int periodMonths = periodYear * MONTHS;
+//        String Mortgage = NumberFormat.getCurrencyInstance().format(
+//                principle *
+//                monthlyInterestRate *
+//                Math.pow(1+monthlyInterestRate, periodMonths)
+//                /
+//                (Math.pow(1+monthlyInterestRate, periodMonths) - 1)
+//        );
+//        System.out.println("Your mortgage: " + Mortgage);
+
+        /* The final optimized version of this exercise could be found in Java Part 1 course of codewithmosh. */
 
     }
-
 }
