@@ -1,0 +1,5 @@
+# ignore the compiled .class file
+*.class
+
+# untrack the resource folder that comes with the course
+"Ultimate Java - Part 1"/
